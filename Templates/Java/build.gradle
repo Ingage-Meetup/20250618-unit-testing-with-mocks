@@ -11,8 +11,16 @@ repositories {
 }
 
 dependencies {
+    testImplementation 'org.mockito:mockito-core:5.6.0'
+
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.11.4'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.11.4'
+}
+
+task run(type: JavaExec) {
+    main = 'Main'
+    classpath = sourceSets.main.runtimeClasspath
+    standardInput = System.in
 }
 
 test {
