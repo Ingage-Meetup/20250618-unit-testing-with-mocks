@@ -1,12 +1,18 @@
-﻿using System;
+﻿using Project.Db;
+using Project.Services;
+using Project.UI;
 
 namespace Project
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var db = new InMemoryDatabase();
+            var service = new StudentService(db);
+            var ui = new ConsoleUI(service);
+
+            ui.Start();
         }
     }
 }
