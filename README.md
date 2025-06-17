@@ -10,7 +10,7 @@ The main objective tonight is to learn more about unit testing frameworks and as
 ## Why Mocking with a Framework?
 Pick a solution language and explore the mocking framework being used to learn more about mocking, and the benefits of using a mocking library versus implementing your own mocks.
 
-But in a nutshell, here are the benefits of using any mocking library:
+In a nutshell, here are the benefits of using any mocking library:
 - **Less Boilerplate:** Mocking libraries automatically generate mock objects, saving you from writing repetitive code.
 - **Flexible Behavior:** Easily configure mocks to return specific values, throw exceptions, or verify method calls.
 - **Readable Tests:** Test code is more concise and expressive, making intent clearer.
@@ -86,5 +86,4 @@ The recommended IDEs are as follows, but feel free to use whatever IDE you are c
 -   [Java](Templates/Java) - [IntelliJ Idea](https://www.jetbrains.com/idea/download) (Community Edition is fine)
 -   [JavaScript](Templates/JavaScript) - [Microsoft Visual Studio Code](https://code.visualstudio.com/)
 -   [Kotlin](Templates/Kotlin) - [IntelliJ Idea](https://www.jetbrains.com/idea/download) (Community Edition is fine)
--   [Python](Templates/Python) - [Pycharm](https://www.jetbrains.com/pycharm/download/?section=windows) (Community Edition is fine)
 -   [TypeScript](Templates/TypeScript) - [Microsoft Visual Studio Code](https://code.visualstudio.com/)
