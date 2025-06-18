@@ -13,7 +13,15 @@ repositories {
 }
 
 dependencies {
+    implementation(kotlin("stdlib"))
+    testImplementation("org.mockito.kotlin:mockito-kotlin:5.4.0")
     testImplementation(kotlin("test"))
+}
+
+tasks.named<JavaExec>("run") {
+    mainClass.set("MainKt")
+    classpath = sourceSets["main"].runtimeClasspath
+    standardInput = System.`in`
 }
 
 tasks.test {
